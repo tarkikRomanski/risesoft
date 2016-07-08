@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RiseSoft</title>
+    <link rel="stylesheet" href="style/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="rise">
+<div ng-controller="lanController">
+
+    <header>
+
+        <div id="baner" class="inverse">
+            <h1>{{ lan.head }}</h1>
+            <h4>{{ lan.headTitle }}</h4>
+        </div>
+
+        <div id="logo">
+            <img src="img/logo.png" alt="RiseSoft">
+            <p>Risesoft</p>
+        </div>
+
+        <div id="adpt-menu">
+            <div id="big-menu">
+                <a href="#">{{ lan.menu1 }}</a>
+                <a href="#">{{ lan.menu2 }}</a>
+                <a href="#">{{ lan.menu3 }}</a>
+                <a href="#">{{ lan.menu4 }}</a>
+                <a href="#">{{ lan.menu5 }}</a>
+                <a href="#">{{ lan.menu6 }}</a>
+            </div>
+            <img id="butter" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2IDU2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1NiA1NjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxMjhweCIgaGVpZ2h0PSIxMjhweCI+CjxwYXRoIGQ9Ik0yOCwwQzEyLjU2MSwwLDAsMTIuNTYxLDAsMjhzMTIuNTYxLDI4LDI4LDI4czI4LTEyLjU2MSwyOC0yOFM0My40MzksMCwyOCwweiBNNDAsNDFIMTZjLTEuMTA0LDAtMi0wLjg5Ni0yLTJzMC44OTYtMiwyLTIgIGgyNGMxLjEwNCwwLDIsMC44OTYsMiwyUzQxLjEwNCw0MSw0MCw0MXogTTQwLDMwSDE2Yy0xLjEwNCwwLTItMC44OTYtMi0yczAuODk2LTIsMi0yaDI0YzEuMTA0LDAsMiwwLjg5NiwyLDJTNDEuMTA0LDMwLDQwLDMweiAgIE00MCwxOUgxNmMtMS4xMDQsMC0yLTAuODk2LTItMnMwLjg5Ni0yLDItMmgyNGMxLjEwNCwwLDIsMC44OTYsMiwyUzQxLjEwNCwxOSw0MCwxOXoiIGZpbGw9IiNmZjc2MGYiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+        </div>
+
+        <div id="nav-menu">
+            <a href="#">{{ lan.menu1 }}</a>
+            <a href="#">{{ lan.menu2 }}</a>
+            <a href="#">{{ lan.menu3 }}</a>
+            <a href="#">{{ lan.menu4 }}</a>
+            <a href="#">{{ lan.menu5 }}</a>
+            <a href="#">{{ lan.menu6 }}</a>
+        </div>
+
+        <div id="language">
+            <p ng-click="changeLan('ru')" class="ru">Ru</p>
+            <p ng-click="changeLan('en')" class="en active">En</p>
+            <p>Pl</p>
+        </div>
+
+    </header>
+
+    <main>
+        <div id="last-prj">
+            <img src="img/calendar.png" alt="" class="prj1">
+            <img src="img/present%20welense.png" alt="" class="prj2">
+            <img src="img/aiduty_chat.png" alt="" class="prj3">
+            <img src="img/empty.png" alt="" class="prj4">
+
+            <a href="#">{{ lan.see }}</a>
+        </div>
+
+        <div id="experts">
+            <h2>{{ lan.experts }}</h2>
+            <p>{{ lan.expertTitle }}</p>
+            <div id="specitification">
+                <img src="img/ruby.png" alt="" class="spc">
+                <img src="img/xamarin.png" alt="" class="spc">
+                <img src="img/yii2.png" alt="" class="spc">
+                <img src="img/vs.png" alt="" class="spc">
+                <img src="img/angularJS.png" alt="" class="spc">
+                <img src="img/PHP-Logo.png" alt="" class="spc">
+            </div>
+        </div>
+
+        <footer>
+            <div id="information">
+                <h2 class="inverse">{{ lan.plan }}</h2>
+                <div class="column">
+                    <h3>{{ lan.strategy }}</h3>
+                    <span>{{ lan.strategyTitle }}</span>
+                    <p>{{ lan.strategyText }}</p>
+                </div>
+                <div class="column">
+                    <h3>{{ lan.design }}</h3>
+                    <span>{{ lan.designTitle }}</span>
+                    <p>{{ lan.strategyText }}</p>
+                </div>
+                <div class="column">
+                    <h3>{{ lan.development }}</h3>
+                    <span>{{ lan.developmentTitle }}</span>
+                    <p>{{ lan.strategyText }}</p>
+                </div>
+            </div>
+
+            <div id="foot">
+                <div class="logo">
+                    <img src="img/logo.png" alt="RiseSoft">
+                    <p>Risesoft</p>
+                </div>
+
+                <div class="nav-menu">
+                    <a href="#">{{ lan.menu1 }}</a>
+                    <a href="#">{{ lan.menu2 }}</a>
+                    <a href="#">{{ lan.menu3 }}</a>
+                    <a href="#">{{ lan.menu4 }}</a>
+                    <a href="#">{{ lan.menu5 }}</a>
+                    <a href="#">{{ lan.menu6 }}</a>
+                </div>
+
+                <div class="language">
+                    <p ng-click="changeLan('ru')" class="ru">Ru</p>
+                    <p ng-click="changeLan('en')" class="en active">En</p>
+                    <p>Pl</p>
+                </div>
+            </div>
+
+            <div id="cop">
+                <p class="inverse">© 2016 risesoft All Rights Reserved</p>
+                <img src="img/fb.png" alt="">
+                <img src="img/gp.png" alt="">
+                <img src="img/in.png" alt="">
+                <img src="img/tw.png" alt="">
+            </div>
+        </footer>
+    </main>
+</div>
+<script src="js/language.js "></script>
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.5/scrollreveal.min.js"></script>
+<script>
+    $('#language p').click(function () {
+        $('#language p').each(function () {
+           $(this).removeClass('active');
+        });
+        $('.language p').each(function () {
+            $(this).removeClass('active');
+        });
+
+        var lan = $(this).attr('class');
+        $('.'+lan).addClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.language p').click(function () {
+        $('.language p').each(function () {
+            $(this).removeClass('active');
+        });
+        $('#language p').each(function () {
+            $(this).removeClass('active');
+        });
+
+        var lan = $(this).attr('class');
+        $('.'+lan).addClass('active');
+        $(this).addClass('active');
+    });
+
+    var triger = false;
+    var menu = "data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2IDU2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1NiA1NjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxMjhweCIgaGVpZ2h0PSIxMjhweCI+CjxwYXRoIGQ9Ik0yOCwwQzEyLjU2MSwwLDAsMTIuNTYxLDAsMjhzMTIuNTYxLDI4LDI4LDI4czI4LTEyLjU2MSwyOC0yOFM0My40MzksMCwyOCwweiBNNDAsNDFIMTZjLTEuMTA0LDAtMi0wLjg5Ni0yLTJzMC44OTYtMiwyLTIgIGgyNGMxLjEwNCwwLDIsMC44OTYsMiwyUzQxLjEwNCw0MSw0MCw0MXogTTQwLDMwSDE2Yy0xLjEwNCwwLTItMC44OTYtMi0yczAuODk2LTIsMi0yaDI0YzEuMTA0LDAsMiwwLjg5NiwyLDJTNDEuMTA0LDMwLDQwLDMweiAgIE00MCwxOUgxNmMtMS4xMDQsMC0yLTAuODk2LTItMnMwLjg5Ni0yLDItMmgyNGMxLjEwNCwwLDIsMC44OTYsMiwyUzQxLjEwNCwxOSw0MCwxOXoiIGZpbGw9IiNmZjc2MGYiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==";
+    var close = "data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzNzEuMjMgMzcxLjIzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNzEuMjMgMzcxLjIzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjEyOHB4IiBoZWlnaHQ9IjEyOHB4Ij4KPHBvbHlnb24gcG9pbnRzPSIzNzEuMjMsMjEuMjEzIDM1MC4wMTgsMCAxODUuNjE1LDE2NC40MDIgMjEuMjEzLDAgMCwyMS4yMTMgMTY0LjQwMiwxODUuNjE1IDAsMzUwLjAxOCAyMS4yMTMsMzcxLjIzICAgMTg1LjYxNSwyMDYuODI4IDM1MC4wMTgsMzcxLjIzIDM3MS4yMywzNTAuMDE4IDIwNi44MjgsMTg1LjYxNSAiIGZpbGw9IiNGRkZGRkYiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==";
+    $('#butter').click(function () {
+        if(triger){
+            $(this).attr('src', menu);
+            $('#big-menu').animate({'opacity':'hide'}, 200);
+            triger = false;
+        } else {
+            $(this).attr('src', close);
+            $('#big-menu').animate({'opacity':'show'}, 200);
+            triger = true;
+        }
+    });
+
+    var fooReveal = {
+        delay    : 200,
+        distance : '90px',
+        easing   : 'ease-in-out',
+        rotate   : { z: 10 },
+        scale    : 1.1
+    };
+    window.sr = ScrollReveal();
+    sr.reveal('.prj1, .prj2', fooReveal, {duration: 1000}, 100);
+    sr.reveal('.prj3, .prj4', {duration: 1500}, 50);
+    sr.reveal('.spc', {duration: 1000}, 200);
+
+
+</script>
+</body>
+</html>
