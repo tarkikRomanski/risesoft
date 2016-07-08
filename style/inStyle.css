@@ -85,7 +85,7 @@ a {
 
 
 header {
-    position: relative;
+    position: static;
     size: 100% 100%;
 
     #nav-menu {
@@ -131,7 +131,7 @@ header {
 }
 
     #logo {
-        position: absolute auto auto auto 10%;
+        position: absolute 0 auto auto 10%;
         font-size: 22px;
         color: #fff;
         z-index: 2;
@@ -143,7 +143,7 @@ header {
     }
 
     #baner {
-        position: absolute 50% auto auto 50%;
+        position: absolute 0 auto auto 50%;
         background: url('../img/he.png') no-repeat;
         background-size: contain;
         size: 440px 250px;
@@ -361,7 +361,7 @@ color: #fff;
 }
 
 
-@media screen and (max-width: 1238px) {
+@media screen and (max-width: 1235px) {
     body {
         font-size: 12px;
     }
