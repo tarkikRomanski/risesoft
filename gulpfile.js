@@ -6,6 +6,13 @@ var cssnano = require('cssnano');
 var nested = require('postcss-nested');
 var cssshort = require('postcss-short');
 var cssnext = require('cssnext');
+var autoprefixer = require('autoprefixer');
+var color_rgba_fallback = require('postcss-color-rgba-fallback');
+var opacity = require('postcss-opacity');
+var pseudoelements = require('postcss-pseudoelements');
+var vmin = require('postcss-vmin');
+var pixrem = require('pixrem');
+var will_change = require('postcss-will-change');
 
 
 gulp.task('css', function () {
@@ -13,7 +20,15 @@ gulp.task('css', function () {
       nested,
       cssnext(),
       cssshort(),
-      cssnano(),
+        will_change,
+        autoprefixer,
+        color_rgba_fallback,
+        opacity,
+        pseudoelements,
+        vmin,
+        pixrem,
+      cssnano()
+        
     ];
     return gulp.src('./style/inStyle.css')
         .pipe(postcss(processors))
