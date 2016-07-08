@@ -100,7 +100,7 @@ header {
     a {
         text-transform: lowercase;
         color: #ffffff;
-        font-size: 18px;
+        font-size: 14px;
         margin-left: 32px;
 
 &:after {
